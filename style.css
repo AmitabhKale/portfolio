@@ -193,7 +193,12 @@ body {
 
 .btn-resume {
   padding: 1.2rem 3.6rem;
-  background-color: green;
+  background-color: rgb(58, 176, 58);
+  transition: all 1s ease;
+}
+
+.btn-resume:hover {
+  background-color: #4389a9;
 }
 
 .about-description h3 {
@@ -446,4 +451,133 @@ textarea {
   background-color: #fff;
   color: #0097e6;
   cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 8rem 0 4rem 0;
+  border-top: 1px solid #126185;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(55, 159, 234) 0%,
+    rgba(53, 192, 223, 0.432) 3%,
+    rgba(2, 165, 224, 1) 95%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 3.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.name span {
+  color: #0887c3;
+}
+
+.address-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.logo {
+  border: 2px solid #4389a9;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+
+.logo-pre {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0097e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.logo-end {
+  width: 100%;
+  height: 100%;
+  background-color: #006aa1;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.social-links {
+  margin-top: 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.social-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #222;
+  transition: color 0.6s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111;
+  transition: color 0.6s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.email-address {
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.copyright {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  letter-spacing: 1.1;
+  color: #eee;
+  text-align: center;
 }
