@@ -49,7 +49,7 @@
 
             <h3 class="card-text">Amitabh Kale</h3>
 
-            <h5>Software Engineer <span>(GlobalLogic pvt)</span></h5>
+            <!-- <h5>Software Engineer <span>(GlobalLogic pvt)</span></h5> -->
 
             <!-- <h5>Nagpur, Maharashtra</h5> -->
 
@@ -145,10 +145,10 @@
               </div>
             </div>
 
-            <div class="skills-grid">
+            <div class="skills-slideshow">
+              <img src="images/html.png" class="skill-img change" alt="" />
               <img src="images/git.png" class="skill-img" alt="" />
               <img src="images/python.png" class="skill-img" alt="" />
-              <img src="images/typescript.png" class="skill-img" alt="" />
 
               <img src="images/bootstrap.png" class="skill-img" alt="" />
               <img src="images/css.png" class="skill-img" alt="" />
@@ -157,6 +157,7 @@
               <img src="images/react.png" class="skill-img" alt="" />
               <img src="images/redux.png" class="skill-img" alt="" />
               <img src="images/node.png" class="skill-img" alt="" />
+              <img src="images/typescript.png" class="skill-img" alt="" />
             </div>
           </div>
         </div>
@@ -172,9 +173,57 @@
       <!-- contacts : BG-color-white -->
 
       <section class="section-contact">
-        <div class="container">
+        <!-- <div class="container">
           <div class="center-text">
             <h2 class="heading-secondary">Contacts</h2>
+          </div>
+        </div> -->
+
+        <div class="container">
+          <div class="contact">
+            <div class="contact-card">
+              <img
+                src="images/phone.avif"
+                class="contact-img"
+                alt="Mobile Phone Image"
+              />
+            </div>
+
+            <form class="contact-form">
+              <h3 class="heading-tertiary">Leave Your Message</h3>
+              <div class="grid grid--2-cols">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="John Doe" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact">Contact</label>
+                  <input type="text" id="contact" placeholder="91 XXXXXXXX" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  id="Email"
+                  placeholder="johndoe@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  id="message"
+                  placeholder=""
+                ></textarea>
+              </div>
+
+              <button class="btn--submit">Submit</button>
+            </form>
           </div>
         </div>
       </section>

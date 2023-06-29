@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 20px;
@@ -117,6 +118,16 @@ body {
   color: #0097e6;
 }
 
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1;
+  line-height: 1.05;
+  margin-bottom: 1.6rem;
+  color: #333;
+  text-decoration: underline #0887c3;
+}
+
 .text-info {
   color: #0887c3;
 }
@@ -142,9 +153,9 @@ body {
 }
 
 .section-about {
-  /* height: 100vh; */
+  height: 100vh;
   background-color: #0097e6;
-  padding: 9.6rem 0;
+  padding: 8rem 0;
 }
 
 .about-container {
@@ -158,6 +169,7 @@ body {
 
 .card {
   width: 80%;
+  height: 66%;
   padding: 2rem;
   background-color: #bbb;
   display: flex;
@@ -170,12 +182,12 @@ body {
 
 .card-image {
   /* margin: 0 auto; */
-  width: 66%;
-  /* height: 66%; */
+  width: 80%;
+  height: 56%;
   object-fit: cover;
-  object-position: 60% 100%;
+  /* object-position: 30% 100%; */
   border: 3px solid #777;
-  border-radius: 50%;
+  border-radius: 26%;
   margin-bottom: 2rem;
 }
 
@@ -260,6 +272,10 @@ body {
   transition: all 2s ease;
 }
 
+.tag-text:hover {
+  transform: skewY(0.8);
+}
+
 .tag img:hover {
   opacity: 0.6;
 }
@@ -273,7 +289,7 @@ body {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60fr 40fr;
   column-gap: 4rem;
 }
 
@@ -290,6 +306,7 @@ body {
 .progress-text {
   position: absolute;
   left: 1rem;
+  top: 0.4rem;
   font-size: 1.6rem;
   color: #fff;
 }
@@ -307,17 +324,32 @@ body {
   border-radius: 0.2rem;
 }
 
-.skills-grid {
+.skills-slideshow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   /* border: 1px solid; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  position: relative;
 }
 
 .skill-img {
-  width: 80%;
-  object-fit: cover;
+  position: absolute;
+  left: 3rem;
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  transform: scale(0);
+  transition: transform 1s;
   /* height: 14rem; */
+}
+
+.skill-img.change {
+  transform: scale(0.8);
+  transition: transform 1s 1s;
 }
 
 .section-project {
@@ -329,6 +361,89 @@ body {
 /************************************/
 
 .section-contact {
-  padding: 9.6rem 0;
+  padding: 8rem 0;
   height: 100vh;
+}
+
+.contact {
+  /* padding: 2rem; */
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+
+  border-radius: 11px;
+  /* background-color: #0887c3; */
+
+  background-color: #eee;
+  box-shadow: 0 0.4rem 0.8rem #0887c3;
+  overflow: hidden;
+}
+
+.contact-card {
+  border-radius: 11px;
+}
+
+.contact-img {
+  width: 66%;
+  height: 100%;
+  opacity: 0.8;
+  /* object-fit: cover; */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  padding: 1.6rem 3.2rem;
+}
+.form-group {
+  margin-bottom: 2.4rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.form-group input,
+textarea {
+  outline: none;
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 6px;
+  border: rgba(129, 187, 214, 0.529);
+}
+
+.form-group input::placeholder {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.form-group input:focus {
+  border: 4px solid rgba(114, 149, 237, 0.529);
+}
+
+.btn--submit {
+  padding: 1.2rem 3.6rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #59a9ce;
+  border-radius: 8px;
+
+  transition: all 1s ease;
+}
+
+.btn--submit:hover {
+  background-color: #fff;
+  color: #0097e6;
+  cursor: pointer;
 }
